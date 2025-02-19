@@ -1,0 +1,24 @@
+{
+  "name": "clock",
+  "version": "1.0.0",
+  "description": "Simple HTML project, experimenting with SVG and some simple animation. This clock is drawn based on the blue print by Hans Hilfiker.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meckert75/clock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meckert75/clock/issues"
+  },
+  "homepage": "https://github.com/meckert75/clock#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

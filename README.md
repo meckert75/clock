@@ -10,6 +10,20 @@ Jerry Wu Hu made a great video about the reason behind the clocks unique behavio
 
 ![Jerry Wu Hu - SBB Bahnhofsuhr](https://img.youtube.com/vi/8VAsD5zGJq4/0.jpg)
 
+## Version 1.6.1
+
+- Fixed an issue where the hour hand angle was off, ensuring accurate time representation.
+
+## Version 1.6.0
+
+Updates and improvements in this version:
+
+- Added support for different time zones (not user facing).
+- Improved animation performance for smoother second hand movement.
+- Enhanced SVG design for better scalability on various screen sizes.
+- Fixed minor bugs related to time synchronization.
+- Updated documentation with new features and usage instructions.
+
 ## Version 1.0.0
 
 Initial release of the clock project. This version includes:

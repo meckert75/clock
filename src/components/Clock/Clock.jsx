@@ -1,5 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 
+const getHoursForTimezone = (date, timezone) => {
+  return parseInt(date.toLocaleString('en-US', { hour: 'numeric', hour12: false, timeZone: timezone }), 10);
+};
+
+const getMinutesForTimezone = (date, timezone) => {
+  return parseInt(date.toLocaleString('en-US', { minute: 'numeric', timeZone: timezone }), 10);
+};
+
 const Clock = ({ time, timezone }) => {
   const hourHandRef = useRef(null);
   const minuteHandRef = useRef(null);
@@ -12,8 +20,8 @@ const Clock = ({ time, timezone }) => {
 
     const updateClock = () => {
       const seconds = time.getSeconds() + time.getMilliseconds() / 1000;
-      const minutes = time.toLocaleString('en-US', { minute: '2-digit', timeZone: timezone });
-      const hours = time.toLocaleString('en-US', { hour: '2-digit', hour12: false, timeZone: timezone });
+      const minutes = getMinutesForTimezone(time, timezone);
+      const hours = getHoursForTimezone(time, timezone);
 
       const secondDeg = (360 * (seconds > 59 ? 0 : seconds)) / 59;
       const minuteDeg = (360 * minutes) / 60;

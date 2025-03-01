@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import ClockCard from './ClockCard.jsx';
 import './ClockContainer.css';
 
-const CardContainer = () => {
+const ClockContainer = () => {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -24,5 +24,5 @@ const CardContainer = () => {
   );
 }
 
-export default CardContainer;
+export default ClockContainer;
 

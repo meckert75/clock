@@ -1,4 +1,19 @@
 .clock-container {
     display: flex;
-    gap: 20mm;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .clock-container {
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .clock-container {
+        gap: 1rem;
+    }
 }

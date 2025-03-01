@@ -7,5 +7,23 @@
     height: 100%;
     font-size: 1.5em;
     font-weight: bold;
+    max-width: 110mm;
 }
 
+.responsive-clock {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .clock-card {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .clock-card {
+        font-size: 1em;
+    }
+}

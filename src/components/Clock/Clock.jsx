@@ -40,14 +40,15 @@ const Clock = ({ time, timezone }) => {
   
   return (
     <svg
-      width="110mm"
-      height="110mm"
+      width="100%"
+      height="100%"
       viewBox="0 0 111 111"
       version="1.1"
       id="svg1"
       xmlSpace="preserve"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       xmlns="http://www.w3.org/2000/svg"
+      className="responsive-clock"
     >
         <defs id="defs1">
             <linearGradient id="linearGradient80">
@@ -86,6 +87,12 @@ const Clock = ({ time, timezone }) => {
             <path id="clock_frame"
                 style={{ display: 'inline', fill: 'url(#linearGradient81)', fillOpacity: 1, stroke: 'none', strokeWidth: 0.205697, strokeOpacity: 1 }}
                 d="M 60,5 A 55,55 0 0 0 5,60 55,55 0 0 0 60,115 55,55 0 0 0 115,60 55,55 0 0 0 60,5 Z m 0,2.5 A 52.5,52.5 0 0 1 112.5,60 52.5,52.5 0 0 1 60,112.5 52.5,52.5 0 0 1 7.5,60 52.5,52.5 0 0 1 60,7.5 Z" />
+            <circle
+              cx="60"
+              cy="60"
+              r="54.75"
+              style={{ fill: 'none', stroke: 'black', strokeWidth: 0.5 }}
+            />
       </g>
       <g id="layer3" transform="translate(-5,-5)">
         <path id="hour_hand"

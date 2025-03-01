@@ -10,6 +10,11 @@ Jerry Wu Hu made a great video about the reason behind the clocks unique behavio
 
 ![Jerry Wu Hu - SBB Bahnhofsuhr](https://img.youtube.com/vi/8VAsD5zGJq4/0.jpg)
 
+## Version 1.6.2
+
+- Added responsiveness to adapt size of clock to screen size
+- Other minor tweaks
+
 ## Version 1.6.1
 
 - Fixed an issue where the hour hand angle was off, ensuring accurate time representation.
